@@ -17,6 +17,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_BtnSauvegarder_clicked()
 {
-
+    if ()
+    {
+        ui->DernierCodeSaisi->text(test);
+    }
 }
 
