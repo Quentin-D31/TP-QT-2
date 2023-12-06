@@ -17,9 +17,17 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_BtnSauvegarder_clicked()
 {
-    if ()
-    {
-        ui->DernierCodeSaisi->text(test);
+    ui->DernierCodeSaisi->setText(ui->Code->text());
+    QMessageBox msgBox;
+    msgBox.setText("Saisir du code.");
+    msgBox.setInformativeText("Vous devez saisir un code!");
+    msgBox.setStandardButtons(QMessageBox::Ok);
+    int ret = msgBox.exec();
+    // On vérifie si l'utilisateur a cliqué sur Ok
+
+    if ( ret == QMessageBox::Ok ) {
+        // traitement à exécuter
     }
+
 }
 

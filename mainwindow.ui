@@ -14,19 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>80</y>
-      <width>113</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="maxLength">
-     <number>10</number>
-    </property>
-   </widget>
    <widget class="QPushButton" name="BtnSauvegarder">
     <property name="geometry">
      <rect>
@@ -51,6 +38,19 @@
     </property>
     <property name="text">
      <string>DernierCodeSaisi</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Code">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>80</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
     </property>
    </widget>
   </widget>
