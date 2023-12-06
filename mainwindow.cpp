@@ -18,6 +18,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_BtnSauvegarder_clicked()
 {
     ui->DernierCodeSaisi->setText(ui->Code->text());
+    if (ui->Code->text){
     QMessageBox msgBox;
     msgBox.setText("Saisir du code.");
     msgBox.setInformativeText("Vous devez saisir un code!");
@@ -27,6 +28,10 @@ void MainWindow::on_BtnSauvegarder_clicked()
 
     if ( ret == QMessageBox::Ok ) {
         // traitement à exécuter
+    }
+    }
+    else {
+
     }
 
 }
